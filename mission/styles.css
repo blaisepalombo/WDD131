@@ -2,10 +2,11 @@
 
 
 body {
-    display:flex;
+    display:grid;
     text-align: left;
-    padding: 100px;
     border: 2px solid black;
+    margin: 600px;
+    padding-top: 50px;
 }
 h1 {
     font-weight: bold;
@@ -16,6 +17,10 @@ h1 {
 h2 {
     color: #1277bb;
     text-align: center;
+    border-bottom: 2px solid grey;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 .byuilogo {
     scale: 25%;
@@ -26,4 +31,17 @@ p {
     font-size: 1.5em;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 25px;
+}
+.p1 {
+    margin-left: 30px;
+}
+.p2 {
+    margin-left: 30px;
+}
+.p3 {
+    margin-left: 30px;
+}
+.p4 {
+    margin-left: 30px;
 }
