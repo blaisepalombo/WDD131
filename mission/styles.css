@@ -45,3 +45,20 @@ p {
 .p4 {
     margin-left: 30px;
 }
+
+.dark{
+    background-color: #333;
+}
+
+.dark h2 {
+    color: #0096f7;
+}
+
+.dark img {
+    scale: 300%;
+    padding: 100px;
+}
+
+.dark p, h1{
+    color: white;
+}
