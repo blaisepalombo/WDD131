@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+body {
+    font-family: 'Mooli', sans-serif;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: white;
+}
+
+header {
+    background-color: #52489c;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #52489c;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size:2em;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    padding: 0; 
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+}
+
+.my-button {
+    background-color: #52489c;
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    border: none;
+    margin: 0 auto; 
+    display: block; 
+    width: fit-content;
+    font-size: 2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: whitesmoke;
+    place-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .menu {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .my-button {
+        display: none;
+    }
+    .menu {
+        display: flex; /* Use flexbox to display items in a row */
+        justify-content: center; /* Center items horizontally */
+        list-style: none; /* Remove default bullet points */
+        padding: 15px; /* Remove padding */
+        margin: 0;
+    }
+    .menu li {
+        margin-right: 20px; /* Space between each menu item */
+    }
+  }
