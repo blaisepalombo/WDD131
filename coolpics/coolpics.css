@@ -35,7 +35,7 @@ h1 {
 }
 
 h3 {
-    font-size:2em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0;
     display: flex;
@@ -50,8 +50,12 @@ h3 {
     margin: 0 auto;
     text-align: center;
     list-style: none;
-    padding: 0; 
+    padding: 0;
     text-decoration: underline;
+}
+
+.menu.hide {
+    display: none;
 }
 
 main {
@@ -63,8 +67,8 @@ main {
     color: white;
     font-family: 'Mooli', sans-serif;
     border: none;
-    margin: 0 auto; 
-    display: block; 
+    margin: 0 auto;
+    display: block;
     width: fit-content;
     font-size: 2em;
 }
@@ -76,31 +80,74 @@ main {
     place-items: center;
 }
 
+/* Modal styling */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: none; /* Hide by default */
+    place-items: center;
+    z-index: 10;
+    color: white;
+}
+
+.viewer img {
+    max-height: 100%;
+    max-width: 90%;
+}
+
+.viewer.show {
+    display: grid; /* Show the modal when class 'show' is added */
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .viewer {
+        padding: 20px;
+    }
+    .viewer img {
+        max-width: 70%;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .gallery {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-
-    .menu {
-        display: none;
+    
+    .my-button {
+        display: block;
     }
-  }
+}
 
-  @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .gallery {
-      grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .my-button {
         display: none;
     }
     .menu {
-        display: flex; /* Use flexbox to display items in a row */
-        justify-content: center; /* Center items horizontally */
-        list-style: none; /* Remove default bullet points */
-        padding: 15px; /* Remove padding */
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 15px;
         margin: 0;
     }
     .menu li {
-        margin-right: 20px; /* Space between each menu item */
+        margin-right: 20px;
     }
-  }
+}
