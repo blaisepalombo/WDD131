@@ -80,7 +80,6 @@ main {
     place-items: center;
 }
 
-/* Modal styling */
 .viewer {
     position: fixed;
     top: 0;
@@ -88,7 +87,7 @@ main {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.75);
-    display: none; /* Hide by default */
+    display: none;
     place-items: center;
     z-index: 10;
     color: white;
@@ -100,7 +99,7 @@ main {
 }
 
 .viewer.show {
-    display: grid; /* Show the modal when class 'show' is added */
+    display: grid;
 }
 
 .close-viewer {
