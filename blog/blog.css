@@ -17,6 +17,9 @@ h1 {
 h2 {
     font-family: PT Sans;
     color: #606C38;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -30,7 +33,7 @@ p {
     color: #283618;
 }
 
-li a{
+li a {
     font-family: Roboto Condensed;
     color: #DDA15E;
     margin-left: 20px;
@@ -60,36 +63,56 @@ ul {
     font-size: 1.5em;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #book-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
     width: 80%;
     margin: 20px auto;
 }
 
+.book-info {
+    display: contents;
+}
+
+.book-infos {
+    grid-column: 1;
+    padding: 10px;
+    border-right: 2px solid #DDA15E;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-content {
+    grid-column: 2;
+    padding: 10px;
+    border-right: 2px solid #DDA15E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 #filter {
-    grid-row: 1;
     grid-column: 3;
+    grid-row: 1;
     background-color: #FEFAE0;
     padding: 10px;
     border: 2px solid #DDA15E;
-}
-
-#second-book {
-    grid-column: 2;
-    border-right: 2px solid #DDA15E;
-}
-
-#second-book-info {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.book-info {
-    border-right: 2px solid #DDA15E;
-    padding: 10px;
+    margin-left: 20px;
 }
 
 .skiptocontent a {
