@@ -2,7 +2,6 @@ import { recipes } from './recipes.mjs';
 
 const recipeCardsContainer = document.getElementById('recipe-card');
 
-// Function to render a single recipe card
 function renderRecipeCard(recipe) {
   return `
     <div class="recipe-card">
@@ -17,11 +16,9 @@ function renderRecipeCard(recipe) {
   `;
 }
 
-// Function to render all recipes dynamically
 function renderRecipes() {
   const recipeCardsHTML = recipes.map(renderRecipeCard).join('');
   recipeCardsContainer.innerHTML = recipeCardsHTML;
 }
 
-// Initialize the page
 renderRecipes();
