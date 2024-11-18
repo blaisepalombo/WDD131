@@ -38,6 +38,13 @@ main {
     border: 2px black solid;
     border-radius: 1.5%;
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    justify-content: right;
+    text-align: right;
 }
 
 img {
@@ -69,6 +76,7 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
 
 @media (min-width: 960px) {
     .recipe-list {
