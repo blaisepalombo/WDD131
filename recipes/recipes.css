@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Amatic SC', cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 10%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    color: black;
+}
+
+main {
+    padding: 1rem;
+    border: 2px black solid;
+    border-radius: 1.5%;
+    margin: 20px;
+}
+
+img {
+    border-radius: 1.5%;
+    width: 75%;
+}
+
+.rating {
+    font-size: 1.5rem;
+}
+
+footer .social {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .social a {
+    display: inline-block;   
+}
+
+footer .social img {
+    width: 50px;
+    height: auto;
+}
+
+footer {
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 960px) {
+    .recipe-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .social {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .social a {
+        display: inline-block;   
+    }
+
+    footer .social img {
+        width: 50px;
+        height: auto;
+    }
+
+    .recipe-card {
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 1.5%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 1.5%;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .recipe-list {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+
+    img {
+        max-width: 100%;
+        border-radius: 1.5%;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.8em;
+        padding: 1rem;
+        background-color: #f4f4f4;
+    }
+
+    footer .social {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .social a {
+        display: inline-block;   
+    }
+
+    footer .social img {
+        width: 30px;
+        height: auto;
+    }
+
+    .recipe-card {
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 1.5%;
+    }
+
+    p {
+        display: none;
+    }
+}
