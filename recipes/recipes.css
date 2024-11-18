@@ -9,127 +9,99 @@
     --secondary-font: 'Amatic SC', cursive;
 }
 
-body {
-    font-family: var(--primary-font);
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: var(--text-dark);
-}
+@media (max-width: 960px) {
 
-header {
-    background-color: white;
-    padding: 1rem;
-    text-align: center;
-    flex-direction: row;
-}
+    body {
+        font-family: var(--primary-font);
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: var(--text-dark);
+    }
 
-header img {
-    max-width: 10%;
-    height: auto;
-}
-
-h1 {
-    font-family: var(--secondary-font);
-    color: black;
-    font-size: 2.5em;
-}
-
-main {
-    padding: 1rem;
-    border: 2px black solid;
-    border-radius: 1.5%;
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-.tags {
-    margin-top: 10px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: white; /* Example color */
-    color: black;
-    padding: 5px 10px;
-    margin: 5px 5px 0 0;
-    font-size: 0.9em;
-    border: 2px solid black;
-}
-
-
-.recipe-card {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    gap: 20px; 
-    margin: 20px 0;
-}
-
-.recipe-card img {
-    width: 100%; 
-    height: auto;
-    border-radius: 8px;
-}
-
-.recipe-card .info {
-    flex: 1;
-    text-align: left;
-}
-
-p {
-    font-family: var(--primary-font);  
-}
-
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-
-h2 {
-    font-family: var(--secondary-font);
-    color: #59c3c3;
-}
-
-
-img {
-    border-radius: 1.5%;
-    width: 100%;
-}
-
-.rating {
-    font-size: 1.5rem;
-}
-
-footer .social {
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-footer .social a {
-    display: inline-block;   
-}
-
-footer .social img {
-    width: 50px;
-    height: auto;
-}
-
-footer {
-    justify-content: center;
-    text-align: center;
-}
-
-
-@media (min-width: 960px) {
-    .recipe-list {
+    header {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
         flex-direction: row;
-        justify-content: space-between;
+    }
+
+    header img {
+        max-width: 10%;
+        height: auto;
+    }
+
+    h1 {
+        font-family: var(--secondary-font);
+        color: black;
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 1rem;
+        border: 2px black solid;
+        border-radius: 1.5%;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tags {
+        margin-top: 10px;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: white; /* Example color */
+        color: black;
+        padding: 5px 10px;
+        margin: 5px 5px 0 0;
+        font-size: 0.9em;
+        border: 2px solid black;
+    }
+
+
+    .recipe-card {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 20px; 
+        margin: 20px 0;
+    }
+
+    .recipe-card img {
+        width: 100%; 
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .recipe-card .info {
+        flex: 1;
+        text-align: left;
+    }
+
+    p {
+        font-family: var(--primary-font);  
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    h2 {
+        font-family: var(--secondary-font);
+        color: #59c3c3;
+    }
+
+    img {
+        border-radius: 1.5%;
+        width: 100%;
+    }
+
+    .rating {
+        font-size: 1.5rem;
     }
 
     footer .social {
@@ -148,6 +120,11 @@ footer {
         height: auto;
     }
 
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+
     .recipe-card {
         padding: 10px;
         border-radius: 1.5%;
@@ -159,13 +136,7 @@ footer {
     }
 }
 
-
-
 @media (max-width: 600px) {
-    .recipe-list {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
 
     main {
         flex-direction: column;
@@ -201,12 +172,118 @@ footer {
     }
 
     .recipe-card {
-        border: 2px solid black;
         padding: 10px;
         border-radius: 1.5%;
     }
 
     p {
         display: none;
+    }
+
+    .tags {
+        margin-top: 10px;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: white; /* Example color */
+        color: black;
+        padding: 5px 10px;
+        margin: 5px 5px 0 0;
+        font-size: 0.9em;
+        border: 2px solid black;
+    }
+
+    header {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    header img {
+        max-width: 10%;
+        height: auto;
+    }
+
+    h1 {
+        font-family: var(--secondary-font);
+        color: black;
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 1rem;
+        border: 2px black solid;
+        border-radius: 1.5%;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tags {
+        margin-top: 10px;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        margin: 5px 5px 0 0;
+        font-size: 0.9em;
+        border: 2px solid black;
+    }
+
+
+    .recipe-card {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        margin: 20px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .recipe-card img {
+        width: 100%; 
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-family: var(--secondary-font);
+        color: #59c3c3;
+    }
+
+    img {
+        border-radius: 1.5%;
+        width: 100%;
+    }
+
+    .rating {
+        font-size: 1.5rem;
+    }
+
+    footer .social {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .social a {
+        display: inline-block;   
+    }
+
+    footer .social img {
+        width: 50px;
+        height: auto;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center;
     }
 }
