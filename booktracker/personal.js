@@ -1,4 +1,3 @@
-// Select the elements
 const progressInput = document.getElementById('progress-input');
 const progressPercentage = document.getElementById('progress-percentage');
 const progressBar = document.getElementById('progress');

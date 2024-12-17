@@ -104,7 +104,7 @@ function shuffleBooks(bookList) {
 
 function displayBooks(bookList, limit, genre = "all") {
     const bookListContainer = document.getElementById("book-list");
-    bookListContainer.innerHTML = ""; // Clear any existing books
+    bookListContainer.innerHTML = ""; 
 
     const filteredBooks = genre === "all"
         ? bookList
