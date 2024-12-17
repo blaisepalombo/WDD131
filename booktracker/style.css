@@ -1,0 +1,291 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Paragraph font */
+    background-color: #606C38;
+    color: #FEFAE0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1b161c;
+    color: #FEFAE0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Garamond', serif; /* Heading font */
+    font-size: 2.5em;
+    margin-top: -100px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    font-family: 'Garamond', serif;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FEFAE0;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Adds a smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #FEFAE0; /* Background color on hover */
+    color: #283618; /* Font color on hover */
+}
+
+/* Logo styling */
+#logo {
+    max-width: 7.5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+/* Main content layout */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+#recommended-books {
+    width: 48%;
+    background-color: #283618;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the boxes */}
+
+#recommended-books h2 {
+    font-family: 'Garamond', serif;
+    color: #DDA15E;
+}
+
+#book-list {
+    list-style: none;
+    padding: 0;
+}
+
+#book-list li {
+    margin-bottom: 10px;
+}
+
+/* Website info sections styling */
+#website-info {
+    width: 48%;
+}
+
+.info-box {
+    background-color: #283618;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the boxes */
+}
+
+#website-info h2, #website-info h3 {
+    font-family: 'Garamond', serif;
+    color: #DDA15E;
+}
+
+#filter-form {
+    margin-top: 20px;
+}
+
+#filter-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#filter-form select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 75px;
+    background-color: #1b161c;
+    color: #FEFAE0;
+}
+
+footer p {
+    font-family: 'Courier New', Courier, monospace; /* Paragraph font */
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+#footer-logo {
+    max-width: 10%;
+    display: flex;
+    justify-content: left;
+}
+
+/* Main content layout for the new page */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left side: Currently Reading section */
+#current-book {
+    background-color: #283618;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+/* Progress bar styling */
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#progress {
+    height: 100%;
+    background-color: #DDA15E;
+    border-radius: 10px;
+}
+
+/* Right side layout: Previous Books and Reading Stats */
+#right-side {
+    width: 48%;
+}
+
+/* Previous Books section */
+#previous-books {
+    background-color: #283618;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Reading Stats section */
+#reading-stats {
+    background-color: #283618;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+h2 {
+    color: #DDA15E;
+    font-family: 'Garamond', serif;
+}
+
+/* Book list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li span {
+    font-weight: bold;
+    color: #DDA15E;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background-color: #606C38;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.book-image {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style for the book image and info layout */
+.book-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.book-image {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#progress-input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+#update-progress-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #DDA15E;
+    color: #283618;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#update-progress-btn:hover {
+    background-color: #FEFAE0;
+    color: #283618;
+}
+
+
+#current-book-image {
+    width: 35%; /* Adjust this value to make it smaller or larger */
+    height: auto;
+}

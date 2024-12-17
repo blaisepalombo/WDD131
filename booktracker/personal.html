@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Progress</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="personal.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.jpg" alt="Logo image" />
+        <h1>Reading Progress</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personal.html">My Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <!-- Left side: Current Book Progress -->
+        <section id="current-book">
+            <h2>Currently Reading</h2>
+            <p>Book Title: <strong>The Great Gatsby</strong></p>
+            <img id="current-book-image" src="images/gatsby.jpg" alt="Currently Reading Book Image" />
+            <p>Progress: <strong id="progress-percentage">0%</strong></p>
+            <div id="progress-bar">
+                <div id="progress" style="width: 0%;"></div>
+            </div>
+            <label for="progress-input">Update Progress: </label>
+            <input type="number" id="progress-input" min="0" max="100" value="-">
+            <button id="update-progress-btn">Update Progress</button>
+        </section>
+        
+        
+
+        <!-- Right side: Previous Books and Stats -->
+        <section id="right-side">
+            <section id="previous-books">
+                <h2>Previously Read Books</h2>
+                <ul>
+                    <li>No books read yet<span></span></li>
+                </ul>
+            </section>
+
+            <section id="reading-stats">
+                <h2>Reading Stats</h2>
+                <p>Total Books Read: <strong>0</strong></p>
+                <p>Total Pages Read: <strong>0</strong></p>
+                <p>Current Streak: <strong>0 days</strong></p>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <img id="footer-logo" src="images/logo.jpg" alt="logo in footer">
+        <p>&copy; 2024 Book Tracker</p>
+    </footer>
+</body>
+</html>

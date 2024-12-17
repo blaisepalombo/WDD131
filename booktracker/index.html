@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.jpg" alt="Logo image" />
+        <h1>Welcome to Book Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personal.html">My Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <section id="recommended-books">
+            <h2>Recommended Books</h2>
+            <ul id="book-list">
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+                <li>Book 4</li>
+                <li>Book 5</li>
+            </ul>
+        </section>
+
+        <section id="website-info">
+            <div class="info-box">
+                <h2>About the Website</h2>
+                <p>Welcome to Book Tracker!</p><br>
+                <p>Track your reading journey, discover new books, and keep your reading habits organized. Whether you're a casual reader or an avid book lover, this site will help you log your books, set reading goals, and keep track of your progress.</p><br>
+                <p>How It Works: Add books to your "Currently Reading" list. Mark books as "Read" when you're done and log your thoughts. Create a personal "Want to Read" list for future reads. Get book recommendations based on your reading history.</p>
+            </div>
+
+            <div class="info-box">
+                <form id="filter-form">
+                    <label for="genre">Filter by Genre:</label>
+                    <select id="genre">
+                        <option value="all">All</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Non-Fiction">Non-Fiction</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Dystopian">Dystopian</option>
+                        <option value="Philosophy">Philosophy</option>
+                        <option value="Post-Apocalyptic">Post-Apocalyptic</option>
+                    </select>
+                </form>
+                <ul id="book-list"></ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img id="footer-logo" src="images/logo.jpg" alt="logo in footer">
+        <p>&copy; 2024 Book Tracker</p>
+    </footer>
+</body>
+</html>
