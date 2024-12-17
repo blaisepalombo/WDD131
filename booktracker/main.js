@@ -92,10 +92,8 @@ const books = [
     }    
 ];
 
-// DOM Elements
 const genreSelect = document.getElementById("genre");
 
-// Function to shuffle the books array
 function shuffleBooks(bookList) {
     for (let i = bookList.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -104,17 +102,14 @@ function shuffleBooks(bookList) {
     return bookList;
 }
 
-// Function to display books with an optional genre filter
 function displayBooks(bookList, limit, genre = "all") {
     const bookListContainer = document.getElementById("book-list");
     bookListContainer.innerHTML = ""; // Clear any existing books
 
-    // Filter books based on genre
     const filteredBooks = genre === "all"
         ? bookList
         : bookList.filter((book) => book.genre.toLowerCase() === genre.toLowerCase());
 
-    // Slice the array to get the desired number of books
     const booksToDisplay = filteredBooks.slice(0, limit);
 
     if (booksToDisplay.length === 0) {
@@ -123,41 +118,33 @@ function displayBooks(bookList, limit, genre = "all") {
     }
 
     booksToDisplay.forEach((book) => {
-        // Create a list item for each book
         const bookItem = document.createElement("li");
         bookItem.classList.add("book-item");
 
-        // Add book image
         const bookImage = document.createElement("img");
         bookImage.src = book.image;
         bookImage.alt = book.title;
         bookImage.classList.add("book-image");
 
-        // Add book title
         const bookTitle = document.createElement("h3");
         bookTitle.textContent = book.title;
 
-        // Add book rating
         const bookRating = document.createElement("p");
         bookRating.textContent = `Rating: ${book.rating}`;
 
-        // Append all elements to the list item
         bookItem.appendChild(bookImage);
         bookItem.appendChild(bookTitle);
         bookItem.appendChild(bookRating);
 
-        // Append the list item to the container
         bookListContainer.appendChild(bookItem);
     });
 }
 
-// Event listener for genre filter
 genreSelect.addEventListener("change", () => {
-    const selectedGenre = genreSelect.value; // Get the selected genre
-    displayBooks(shuffledBooks, 6, selectedGenre); // Display filtered books
+    const selectedGenre = genreSelect.value; 
+    displayBooks(shuffledBooks, 6, selectedGenre); 
 });
 
-// Shuffle books and display only 6 initially
 const shuffledBooks = shuffleBooks(books);
 displayBooks(shuffledBooks, 6);
 
